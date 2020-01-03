@@ -4,7 +4,7 @@ function generateSourceDefault (umlCode, pluginOptions) {
   var imageFormat = pluginOptions.imageFormat || 'svg'
   var diagramName = pluginOptions.diagramName || 'uml'
   #var server = pluginOptions.server || 'https://www.plantuml.com/plantuml'
-  var server = pluginOptions.server || 'http://localhost:8080/'
+  var server = 'http://localhost:8080/'
   var zippedCode = deflate.encode64(
     deflate.zip_deflate(
       unescape(encodeURIComponent(
